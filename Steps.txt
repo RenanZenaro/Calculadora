@@ -1,0 +1,9 @@
+Criar uma pasta "react-native" no disco local (C:)
+Colocar a pasta deste projeto lá
+Abrir o Windows PowerShell no modo adm e entrar na pasta calculadora e baixar as dependências
+--> cd \
+    cd react-native/calculadora
+    npm i
+
+Depois abrir o Android Studio e executar o android, após isso executar no PowerShell
+    npm run android
