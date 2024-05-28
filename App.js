@@ -1,11 +1,24 @@
-import { Text, SafeAreaView, StyleSheet } from 'react-native';
+import { SafeAreaView, StyleSheet, View } from 'react-native';
 
-import Calculadora2 from './components/Calculadora2'
+import Botao from "./src/components/Botao"
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Calculadora2 />
+      <View style={styles.botoes}>
+      <Botao label="7"/>
+      <Botao label="8"/>
+      <Botao label="9"/>
+      <Botao label="*"/>
+      <Botao label="4"/>
+      <Botao label="5"/>
+      <Botao label="6"/>
+      <Botao label="-"/>
+      <Botao label="1"/>
+      <Botao label="2"/>
+      <Botao label="3"/>
+      <Botao label="+"/>
+      </View>
     </SafeAreaView>
   );
 }
@@ -14,13 +27,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
-    padding: 8,
   },
-  paragraph: {
-    margin: 24,
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
+  botoes: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    backgroundColor: '#900'
   },
 });

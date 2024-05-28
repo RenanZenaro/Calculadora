@@ -1,3 +1,6 @@
+git config --global user.name RenanZenaro
+git config --global user.email renanzenaro@hotmail.com
+
 Criar uma pasta "react-native" no disco local (C:)
 Colocar a pasta deste projeto lá
 Abrir o Windows PowerShell no modo adm e entrar na pasta calculadora e baixar as dependências
