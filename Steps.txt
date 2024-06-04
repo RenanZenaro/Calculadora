@@ -1,12 +1,17 @@
 git config --global user.name RenanZenaro
 git config --global user.email renanzenaro@hotmail.com
 
-Criar uma pasta "react-native" no disco local (C:)
-Colocar a pasta deste projeto lá
-Abrir o Windows PowerShell no modo adm e entrar na pasta calculadora e baixar as dependências
---> cd \
-    cd react-native/calculadora
-    npm i
+Passos para executar o projeto do react-native
+-----------------------------------------------
+1. Baixar o projeto do repositório;
 
-Depois abrir o Android Studio e executar o android, após isso executar no PowerShell
-    npm run android
+2. Baixar as dependências do projeto executanto o comando:
+   npm i
+
+3. Instalando o metro:
+   npx expo install react-native-web react-dom @expo/metro-runtime
+
+4. Abrir o emulador no Android Studio;
+
+5. Executar o projeto executando o comando:
+   npm run android
