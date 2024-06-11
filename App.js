@@ -38,7 +38,7 @@ export default function App() {
       valores[estadoCalculadora.posicaoCorrente] = novoValor
     }
 
-    setEstadoCalculadora({...estadoTemp, valorVisor, limparVisor: false});
+    setEstadoCalculadora({...estadoCalculadora, valorVisor, limparVisor: false});
   }
 
   limparMemoria = () => {
