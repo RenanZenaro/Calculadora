@@ -28,7 +28,7 @@ export default function App() {
     if(n === '.' && estadoCalculadora.valorVisor.includes('.')){
       return
     }
-    const limparVisor = estadoCalculadora.valorVisor === '0' || estadoCalculadora.limparVisor
+    const limparVisor = (estadoCalculadora.valorVisor === '0' && n != '.') || estadoCalculadora.limparVisor
     const valorCorrente = limparVisor ? '' : estadoCalculadora.valorVisor
     const valorVisor = valorCorrente + n
 
@@ -54,7 +54,7 @@ export default function App() {
 
       try {
         valores[0] = eval(`${valores[0]} ${estadoCalculadora.operacao} ${valores[1]}`)
-      } catch {
+      } catch (error) {
         valores[0] = estadoCalculadora.valores[0]
       }
 
@@ -103,6 +103,6 @@ const styles = StyleSheet.create({
   botoes: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    backgroundColor: '#900'
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
   },
 });

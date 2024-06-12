@@ -14,7 +14,7 @@ const estilos = StyleSheet.create({
         padding: 20,
         justifyContent: 'center',
         alignItems: 'flex-end',
-        backgroundColor: 'rgba(0, 0, 0, 0.6)'
+        backgroundColor: 'rgba(0, 0, 0, 0.9)'
     },
     valorVisor: {
         fontSize: 60,
